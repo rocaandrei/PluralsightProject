@@ -10,7 +10,8 @@ namespace Plural
 {
     public class GradeBook : GradeTracker
     {
-       
+        public Colors BookColor;
+        
         public GradeBook() 
         {
             _name = null;

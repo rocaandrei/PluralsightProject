@@ -58,9 +58,9 @@ namespace Plural
 
         public GradeStatistics()
         {
-            HightestGrade = 0;
+            HightestGrade = float.MinValue;
             LowestGrade = float.MaxValue;
-            AverageGrade = 0;
+            AverageGrade = float.MinValue;
         }
     }
 }
