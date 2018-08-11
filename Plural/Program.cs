@@ -40,13 +40,18 @@ namespace Plural
             book1.NameChanged += new NameChangedDelegate(OnNameChanged);
             book1.BookColor = c1;
             Console.WriteLine(book1.BookColor.Red);
+            Console.WriteLine(book1.BookColor.Green);
             GetBookName(book1);
             AddGrades(book1);
-            SaveToFileGrades(book1);
-
-           // book1.ShowGrades(Console.Out);
-
+            SaveToFileGrades(book1);//salvezi in fisierul tau txt! 
             WriteResults(book1);
+
+            // book1.ShowGrades(Console.Out);
+
+            GradeBook carte = new GradeBook();
+            carte.Name = "Nume carte nou";
+            carte.NameChanged2 += OnNameChanged;
+            carte.Name = "Nume dupa event...";
         }
 
         private static void WriteResults(IGradeTracker book)
@@ -64,6 +69,7 @@ namespace Plural
             WriteResult("Letter description", stats.Description, stats.LetterGrade);
         }
 
+      
         private static void SaveToFileGrades(IGradeTracker book1)
         {
             //ca sa salvam un text, intr-un fisier txt facut de noi
@@ -121,9 +127,18 @@ namespace Plural
         }
         #endregion
         #region WriteResult method 
+        private static void WriteResult(string description, string str1, char str2)
+        {
+            Console.WriteLine(description + ": " + str1 + "-"+ str2);
+        }
+
         static void WriteResult(string str, string nr)
         {
             Console.WriteLine(str + ": " + nr);
+        }
+        static void WriteResult(string str, char ch)
+        {
+            Console.WriteLine(str + ": " + ch);
         }
         static void WriteResult(string someTxt, string description, string grade)
         {

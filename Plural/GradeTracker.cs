@@ -36,8 +36,8 @@ namespace Plural
                     {
                         NameChanged(this, args);
                         //this = face rererire la obiectul curent, pe care il operam in momentul compilarii
-                        NameChanged2?.Invoke(this, args);//la fel ca in if-ul de mai sus doar ca mai putin scris, doar ca aici folosim si metoda statica Invoke()
                     }
+                    NameChanged2?.Invoke(this, args);//la fel ca in if-ul de mai sus doar ca mai putin scris, doar ca aici folosim si metoda statica Invoke()
                 }
                 _name = value;
             }

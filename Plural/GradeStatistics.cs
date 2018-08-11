@@ -7,24 +7,24 @@ namespace Plural
         public float HightestGrade;
         public float LowestGrade;
         public float AverageGrade;
-        public string LetterGrade
+        public char LetterGrade
         {
             get
             {
                 double roundNo = Math.Round(AverageGrade);
-                string value;
+                char value;
                 if (roundNo >= 90)
                 {
-                    value = "A";
+                    value = 'A';
                 }
                 else if (roundNo >= 80)
-                    value = "B";
+                    value = 'B';
                 else if (roundNo >= 70)
-                    value = "C";
+                    value = 'C';
                 else if (roundNo >= 60)
-                    value = "D";
+                    value = 'D';
                 else
-                    value = "F";
+                    value = 'F';
 
                 return value;
             }
@@ -36,16 +36,16 @@ namespace Plural
                 string result = "";
                 switch (LetterGrade)
                 {
-                    case "A":
+                    case 'A':
                         result = "Excelent";
                         break;
-                    case "B":
+                    case 'B':
                         result = "Good";
                         break;
-                    case "C":
+                    case 'C':
                         result = "Average";
                         break;
-                    case "D":
+                    case 'D':
                         result = "Below Average";
                         break;
                     default:
