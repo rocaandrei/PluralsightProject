@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Plural.GradeBook" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAABAABAAAAgAAAAAIAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>GradeBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plural.GradeStatistics" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgAAAAAAgAAAAAAEAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>GradeStatistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plural.GradeTracker" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAABAAAAAAAgQAAAAIAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>GradeTracker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Plural.ThrowAwayGradeBook">
+    <Position X="6.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThrowAwayGradeBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plural.Program" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIiFAAAAAAAAAAAAAAAAAAAAAAQAQAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plural.NameChangedEventArgs" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>NameChangedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Plural.Colors" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Colors.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Plural.IGradeTracker" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAgQAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGradeTracker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="Plural.NameChangedDelegate" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NameChangedDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
