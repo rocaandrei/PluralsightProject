@@ -12,13 +12,7 @@ namespace Plural
     {
         static void Main(string[] args)
         {
-            string name1 = "Andrei";
-            string name2 = "andrei";
-            bool isEqual = name1.Equals(name2, StringComparison.InvariantCultureIgnoreCase);
-            Console.WriteLine(isEqual);
-            Colors c1 = new Colors();
-            c1.Green = "green";
-            c1.Red = "RED";
+          
             #region Some commented code
             ////  SpeechSynthesizer speech = new SpeechSynthesizer();
             ////  speech.Speak("Hello this is the Grade Book program.");
@@ -36,9 +30,10 @@ namespace Plural
             //book1.Name = "Titlu nou";//se apeleaza cand folosim delegatul
             //book1.Name = "Scott name book";// se apeleaza cand folosim delegatul
             #endregion
+       
             GradeBook book1 = new ThrowAwayGradeBook();
             book1.NameChanged += new NameChangedDelegate(OnNameChanged);
-            book1.BookColor = c1;
+         
             Console.WriteLine(book1.BookColor.Red);
             Console.WriteLine(book1.BookColor.Green);
             GetBookName(book1);
