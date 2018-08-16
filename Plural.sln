@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePluralExamples", "Sim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunicatingBetweenComponents", "ComunicatingBetweenComponents\ComunicatingBetweenComponents.csproj", "{250B9DE1-B426-4E06-95DB-8575A383222E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePlural", "SimplePlural\SimplePlural.csproj", "{73F0A72E-7472-4BEC-BF5F-E04306A08A54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{250B9DE1-B426-4E06-95DB-8575A383222E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{250B9DE1-B426-4E06-95DB-8575A383222E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{250B9DE1-B426-4E06-95DB-8575A383222E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
