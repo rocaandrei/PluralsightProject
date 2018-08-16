@@ -12,7 +12,7 @@ namespace Plural
     {
         static void Main(string[] args)
         {
-          
+
             #region Some commented code
             ////  SpeechSynthesizer speech = new SpeechSynthesizer();
             ////  speech.Speak("Hello this is the Grade Book program.");
@@ -30,23 +30,30 @@ namespace Plural
             //book1.Name = "Titlu nou";//se apeleaza cand folosim delegatul
             //book1.Name = "Scott name book";// se apeleaza cand folosim delegatul
             #endregion
-       
+
             GradeBook book1 = new ThrowAwayGradeBook();
             book1.NameChanged += new NameChangedDelegate(OnNameChanged);
-         
+
             Console.WriteLine(book1.BookColor.Red);
             Console.WriteLine(book1.BookColor.Green);
-            GetBookName(book1);
-            AddGrades(book1);
+            GetBookName(book1);//setam numele cartii
+            AddGrades(book1);//adaugam note in cartea noastra 
             SaveToFileGrades(book1);//salvezi in fisierul tau txt! 
-            WriteResults(book1);
+            WriteResults(book1);//afisam in consola, notele si statistici legate de ele 
 
             // book1.ShowGrades(Console.Out);
 
             GradeBook carte = new GradeBook();
             carte.Name = "Nume carte nou";
+            carte.NameChanged2 += Carte_NameChanged2;
             carte.NameChanged2 += OnNameChanged;
+
             carte.Name = "Nume dupa event...";
+        }
+
+        private static void Carte_NameChanged2(object sender, NameChangedEventArgs args)
+        {
+            Console.WriteLine("face ceva...");
         }
 
         private static void WriteResults(IGradeTracker book)
@@ -64,7 +71,7 @@ namespace Plural
             WriteResult("Letter description", stats.Description, stats.LetterGrade);
         }
 
-      
+
         private static void SaveToFileGrades(IGradeTracker book1)
         {
             //ca sa salvam un text, intr-un fisier txt facut de noi
@@ -124,7 +131,7 @@ namespace Plural
         #region WriteResult method 
         private static void WriteResult(string description, string str1, char str2)
         {
-            Console.WriteLine(description + ": " + str1 + "-"+ str2);
+            Console.WriteLine(description + ": " + str1 + "-" + str2);
         }
 
         static void WriteResult(string str, string nr)
