@@ -25,7 +25,7 @@ namespace SimplePluralExamples
             pro.ProcessFunc(5, 10, actionDivideDelegate);
             //ReadFromTxt();
 
-           //nu ma prind exact care e treaba aici 
+            //nu ma prind exact care e treaba aici 
             pro.BizRulessEvent += Pro_BizRulessEvent2;
             pro.BizRulessEvent += (x, y) => x + y + 100;
             pro.ProcessEvent(5, 10);
@@ -34,7 +34,7 @@ namespace SimplePluralExamples
         private static int Pro_BizRulessEvent2(int x, int y)
         {
             Console.WriteLine("face ceva...");
-                return 200;
+            return 200;
         }
 
         private static int Pro_BizRulessEvent1(int x, int y)
