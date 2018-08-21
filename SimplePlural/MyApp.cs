@@ -32,7 +32,7 @@ namespace SimplePlural
         }
         private static void CustomDialogBox(FormClosingEventArgs e)
         {
-            //instantiem casuta noastra de inchidere personalizata, formul ala de l-am facut eu
+            //instantiem casuta noastra de inchidere personalizata, form-ul ala de l-am facut eu
             ConfirmDialog personalConfirm = new ConfirmDialog();
             //acum facem interograrea ca ce-a de jos
             if (personalConfirm.ShowDialog() == DialogResult.No)

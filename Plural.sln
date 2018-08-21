@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunicatingBetweenComponen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePlural", "SimplePlural\SimplePlural.csproj", "{73F0A72E-7472-4BEC-BF5F-E04306A08A54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuAndToolBars", "MenuAndToolBars\MenuAndToolBars.csproj", "{4E551BAC-3D44-4ADD-9F39-EC68B43B88B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControl", "UserControl\UserControl.csproj", "{AB1B0086-3BA2-4852-9593-0503D460C09A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73F0A72E-7472-4BEC-BF5F-E04306A08A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E551BAC-3D44-4ADD-9F39-EC68B43B88B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E551BAC-3D44-4ADD-9F39-EC68B43B88B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E551BAC-3D44-4ADD-9F39-EC68B43B88B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E551BAC-3D44-4ADD-9F39-EC68B43B88B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
