@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePlural", "SimplePlura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuAndToolBars", "MenuAndToolBars\MenuAndToolBars.csproj", "{4E551BAC-3D44-4ADD-9F39-EC68B43B88B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControl", "UserControl\UserControl.csproj", "{AB1B0086-3BA2-4852-9593-0503D460C09A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlLearning", "UserControl\UserControlLearning.csproj", "{AB1B0086-3BA2-4852-9593-0503D460C09A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
