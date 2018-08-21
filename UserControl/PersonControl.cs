@@ -17,14 +17,18 @@ namespace UserControlLearning
         {
             InitializeComponent();
         }
+
         Person _person = new Person();
+        int no = 0;// imi trebe asta in tryParse-ul de Age
+
         public Person Person// aici setam valorile in functie de specificaile din UserControl[Design] si ne setam valorile 
         {
             get
             {
                 _person.FirstName = FirstNameTextBox.Text;
                 _person.LastName = SecondNameTextBox.Text;
-                _person.Age = int.Parse(AgeTextBox.Text);
+                bool letsTry = int.TryParse(AgeTextBox.Text, out no);
+                _person.Age = no;
                 return _person;
             }
             set
@@ -37,3 +41,4 @@ namespace UserControlLearning
         }
     }
 }
+

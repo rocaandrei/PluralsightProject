@@ -25,18 +25,14 @@ namespace UserControlLearning
                 LastName = "Roca",
                 Age = 27
             };
-            PersonControl persControl = new PersonControl();
-            persControl.Person = p;//iar valorile din instanta p vor trece in Person Control1;
-        }
-
-        private void personControl1_Load(object sender, EventArgs e)
-        {
-
+            personControl1.Person = p;
+            //PersonControl persControl = new PersonControl();
+            //persControl.Person = p;//iar valorile din instanta p vor trece in Person Control1;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(personControl1.Person.LastName);
+            MessageBox.Show("Nume " + personControl1.Person.LastName + " Prenume " + personControl1.Person.FirstName + " Varsta " + personControl1.Person.Age);
         }
     }
 }

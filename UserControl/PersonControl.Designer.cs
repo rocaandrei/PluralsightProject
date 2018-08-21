@@ -99,8 +99,8 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
-
+    }
+        
         #endregion
 
         private System.Windows.Forms.TextBox FirstNameTextBox;
@@ -109,5 +109,7 @@
         private System.Windows.Forms.Label FirstNameLabel;
         private System.Windows.Forms.Label SecondNameLabel;
         private System.Windows.Forms.Label AgeLabel;
+
+
     }
 }
