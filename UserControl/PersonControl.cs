@@ -33,9 +33,9 @@ namespace UserControlLearning
             }
             set
             {
-                FirstNameTextBox.Text = _person.FirstName;
-                SecondNameTextBox.Text = _person.LastName;
-                AgeTextBox.Text = _person.Age.ToString();
+                FirstNameTextBox.Text = value.FirstName;
+                SecondNameTextBox.Text = value.LastName;
+                AgeTextBox.Text = value.Age.ToString();
                 _person = value;
             }
         }
