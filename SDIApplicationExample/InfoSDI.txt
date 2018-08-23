@@ -1,0 +1,5 @@
+﻿SDI App e la fel ca la MDI App doar ca fara un cadru, adica o un MainForm, tot ce inseamna copil in SDI devine MainForm
+- sunt singleton, doar o instanta = daca deschizi mai multe ferestre, toate ferestrele sunt legate de instanta initiala
+- se inschide cand ultimul form e inchis 
+
+- acum trebuie s adaugam un Application Object care sa integreze codul- trebuie scris manual 
