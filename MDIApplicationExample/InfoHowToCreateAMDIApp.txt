@@ -1,0 +1,11 @@
+﻿Iti faci un windform normal, iar cel mai importat in sectiunea de Proprietati a formulului, la proprietatea IsMdiContainer = true; si atunci 
+se face si chenarul mai gri
+
+Dupa trebuie sa-ti faci un windows form copil - ChildForm = > asta o sa fie inglobat in main form si o sa se poata deschide de acolo
+
+Dupa iti faci un Menu Strip in MainForm si daca dai clic pe sageata aia mica poti sa te folosesti de: Insert Standar 
+Items si iti insereaza itemii aia mai default de-i folosesti 
+
+
+! pe MenuStrip - daca intri in proporietati si te duci la propietatea MdiWindowListItem si selectezi tabul destinat - tabului aluia o sa ii insereze ca o lista
+tot ce adaugi tu in MDI

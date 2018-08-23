@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuAndToolBars", "MenuAndT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlLearning", "UserControl\UserControlLearning.csproj", "{AB1B0086-3BA2-4852-9593-0503D460C09A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDIApplicationExample", "MDIApplicationExample\MDIApplicationExample.csproj", "{4F32825F-9C33-4143-A04B-0951098B7B14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB1B0086-3BA2-4852-9593-0503D460C09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F32825F-9C33-4143-A04B-0951098B7B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F32825F-9C33-4143-A04B-0951098B7B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F32825F-9C33-4143-A04B-0951098B7B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F32825F-9C33-4143-A04B-0951098B7B14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
