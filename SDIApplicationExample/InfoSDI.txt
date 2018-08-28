@@ -3,3 +3,9 @@
 - se inschide cand ultimul form e inchis 
 
 - acum trebuie s adaugam un Application Object care sa integreze codul- trebuie scris manual 
+
+intr-o aplicatie SDI ca sa ai functionalitatea aia de iti coboara si iti arata in window fisierele deschise listate, trebuie sa scrii cod nu ai aceeasi 
+functionalitate ca la MDI: pentru asta trebuie deschis si apelat event-ul DropDownOpening
+
+
+

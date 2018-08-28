@@ -35,22 +35,6 @@ namespace SDIApplicationExample
         {
             CreateForm();
         }
-        //evenimentele de mai jos sunt destinate sa-mi aranjeze ferestrele deschise 
-        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.LayoutMdi(MdiLayout.Cascade);
-        }
-
-        private void tileHorizontallyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.LayoutMdi(MdiLayout.TileHorizontal);
-        }
-
-        private void tileVerticallyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
-
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DocumentTextBox.Undo();
@@ -115,5 +99,34 @@ namespace SDIApplicationExample
             }
         }
 
+        private void redoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DocumentTextBox.Redo();
+        }
+
+        private void windowToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+            if (windowToolStripMenuItem.DropDownItems.Count > 0)
+            {
+                windowToolStripMenuItem.DropDown.Dispose();
+            }
+
+            windowToolStripMenuItem.DropDown = new ToolStripDropDown();
+            foreach (Form  openForm in Application.OpenForms)
+            {
+                var chidItem = new ToolStripDropDown();
+                chidItem.Text = openForm.Text;
+                chidItem.Tag = openForm;
+                windowToolStripMenuItem.DropDownItems.Add(chidItem.Text);
+                chidItem.Click += WindowMenuItemClick;
+                
+            }
+        }
+
+        private void WindowMenuItemClick(object sender, EventArgs e)
+        {
+         //asta mai trebuie lucata 
+
+        }
     }
 }

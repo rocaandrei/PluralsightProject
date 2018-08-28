@@ -9,15 +9,15 @@ namespace SDIApplicationExample
 {
     public class SDIApplication : WindowsFormsApplicationBase// trebuie sa-i faci mostenirea asta daca vrei sa faci SDI App
     {
-        //asta trebuie  sa fie un singleton 
+        //asta trebuie  sa fie un singleton de aceea campul este static 
         private static SDIApplication _sdiApplicationInstance = null;
 
         public SDIApplication()//aici setezi shutdownmode-ul si sa verifici sa fie doar o singura instanta iti trebe la SDI App
         {
-            this.IsSingleInstance = true;
-            this.ShutdownStyle = ShutdownMode.AfterAllFormsClose;
+            IsSingleInstance = true;
+            ShutdownStyle = ShutdownMode.AfterAllFormsClose;
         }
-        //la singleton ai doar get, pentru ca trebuie doar sa-ti returnezi valoarea nu sa o si creezi
+        //pentru Singleton ai doar GET, pentru ca trebuie doar sa-ti returnezi valoarea nu sa o si creezi
         public static SDIApplication SdiInstance
         {
             get
@@ -29,7 +29,7 @@ namespace SDIApplicationExample
                 return _sdiApplicationInstance;
             }
         }
-        //trebuie sa faci ovverite la metodele astea pentru SDI
+        //trebuie sa faci override la metodele astea pentru SDI
         protected override void OnCreateMainForm()
         {
             DocForm.CreateForm();
